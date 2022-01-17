@@ -179,7 +179,7 @@ border: none;
 }
 
 
-.icon-mail{
+.header__icon{
     display: inline-flex;
     fill:currentColor;
     justify-content: center;
@@ -188,7 +188,7 @@ border: none;
 }
 
 
-.icon-phone{
+.header__icon{
     display: inline-flex;
     fill: currentColor;
     justify-content: center;
@@ -198,8 +198,8 @@ border: none;
 
 
 
-.link-box-phone,
-.link-box-mail{
+.haeder-adress__link,
+.haeder-adress__link{
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -210,13 +210,13 @@ border: none;
  
 }
 
-.link-box-phone:hover,
-.link-box-phone:focus{
+.haeder-adress__link:hover,
+.haeder-adress__link:focus{
     color: var(--accent-color);
 }
 
-.link-box-mail:hover,
-.link-box-mail:focus{
+.haeder-adress__link:hover,
+.haeder-adress__link:focus{
     color: var(--accent-color);
 }
 
