@@ -379,7 +379,7 @@ border: none;
     background-color: var(--background-color);
 }
 
-.button-close {
+.modal__open{
     position: absolute;
     top: 8px;
     right: 8px;
@@ -392,17 +392,17 @@ border: none;
     cursor: pointer;
 }
 
-.button-close:hover .button-icon,
-.button-close:focus .button-icon{
+.modal__open:hover .modal__icon,
+.modal__open:focus .modal__icon{
     fill: var(--accent-color);
 }
 
-.button-icon{
+.modal__icon{
     transition: fill var(--transition-duration) var(--transition-timing-function);
     margin: 0 9px;
 }
 
-.modal-text{
+.modal__text{
     color: var(--main-text-color);
     font-weight: 700;
     font-size: 20px;
