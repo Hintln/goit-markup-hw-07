@@ -411,15 +411,15 @@ border: none;
     margin: 0 0 12px 0;
 }
 
-.form-area{
+.form{
     position: relative;
 }
 
-.form-container{
+.form__container{
     position: relative;
 }
 
-.form-label{
+.form__label{
     display: flex;
     color: var(--secondary-text-color);
     font-weight: 400;
@@ -428,7 +428,7 @@ border: none;
     letter-spacing: 0.01em;
 }
 
-.form-input{
+.form__input{
     width: 100%;
     height: 40px;
     padding: 11px 42px;
@@ -443,28 +443,28 @@ border: none;
 }
 
 
-.form-input:focus ~ .form-icon{
+.form__input:focus ~ .form__icon{
     fill: var(--accent-color);
 }
 
 
-.form-input:focus{
+.form__input:focus{
     border: 1px solid var(--accent-color);
     outline: 0;
 }
 
-.form-icon:focus{
+.form__icon:focus{
     color: var(--accent-color);
 }
 
-.form-icon{
+.form__icon{
     position: absolute;
     top: 0;
     left: 14px;
     fill: var(--main-text-color);
 }
 
-.form-comment{
+.form__comment{
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -479,20 +479,20 @@ border: none;
 }
 
 
-.form-comment::placeholder{
+.form__comment::placeholder{
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form-comment:focus{
+.form__comment:focus{
     border: 1px solid var(--accent-color);
     outline: 0;
 }
 
-.form-comment:not(:placeholder-shown) {
+.form__comment:not(:placeholder-shown) {
     color: var(--main-text-color);
 }
 
-.checkbox-label{
+.checkbox__label{
     display: flex;
     justify-content: center;
     align-items: center ;
@@ -505,7 +505,7 @@ border: none;
 
 }
 
-.checkbox-label > .visual-hidden{
+.checkbox__label > .checkbox__visual-hidden{
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -519,12 +519,12 @@ border: none;
 }
 
 
-.checkbox-label  > .visual-hidden:checked + .checkbox-icon{
+.checkbox__label  > .checkbox__visual-hidden:checked + .checkbox__icon{
     background-color: var(--accent-color);
     border: transparent;
 }
 
-.checkbox-icon{
+.checkbox__icon{
     width: 16px;
     height: 15px;
     margin-right: 8px;
@@ -533,7 +533,7 @@ border: none;
     border: 2px solid var(--main-text-color);
 }
 
-.checkbox-link{
+.checkbox__link{
     color: var(--accent-color);
     margin-left: 4px;
     text-decoration: underline;
@@ -541,7 +541,7 @@ border: none;
 }
 
 
-.button-checkbox{
+.checkbox__button{
     align-items: center;
     height: 50px;
     width: 200px;
