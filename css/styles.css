@@ -563,6 +563,7 @@ border: none;
 
 
 
+/*Portfolio section*/
 
 .filter-button{
     color: var(--main-text-color);
@@ -606,30 +607,38 @@ border: none;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/*end*/
 
 
-.main-section{
+/*Benefits*/
+
+.benefits{
     height: 251px;
     align-items: center;
 }
 
-.services-list.portfolio{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 94px;
-    justify-content: center;  
-}
 
-.services-list{
+
+.benefits__list{
     display: flex;
     margin-bottom: 94px;
     justify-content: center;  
 }
 
-.services-item{
+.benefits__item{
     display: list-item;
     width: 270px;
     height: 101px;
+}
+
+.benefits__item::before{
+    display: block;
+    content: '';
+    height: 120px;
+    background: #F5F4FA;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -651,21 +660,14 @@ border: none;
     text-transform: uppercase;
 }
 
-
-.services-image{
-    position: relative;
+.services__list{
     display: flex;
+    margin-bottom: 94px;
+    justify-content: center;  
 }
 
-.services-item::before{
-    display: block;
-    content: '';
-    height: 120px;
-    background: #F5F4FA;
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
+
 
 .icon-antena::before{
     background-image: url(../images/antenna\ .svg);
@@ -684,7 +686,20 @@ border: none;
 }
 
 
-/*===Animation==*/
+/*===Animation_Portfolio==*/
+
+
+.services-image{
+    position: relative;
+    display: flex;
+}
+
+.services-list.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 94px;
+    justify-content: center;  
+}
 
 
 .services-preview:hover .pic-wrap::before,
