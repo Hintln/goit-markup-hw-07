@@ -172,14 +172,24 @@ address{
 }
 
 
-.connect-nav{
+.header-adress{
 display: flex;
 margin-left: auto;
 border: none;
 }
 
+.haeder-adress__link-phone{
+    margin-left: 50px;
+}
 
-.header__icon{
+.header-adress-item:hover,
+.header-adress-item:focus{
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+
+.header-adress__icon{
     display: inline-flex;
     fill:currentColor;
     justify-content: center;
@@ -188,13 +198,15 @@ border: none;
 }
 
 
-.header__icon{
+.header-adress__icon{
     display: inline-flex;
     fill: currentColor;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
 }
+
+
 
 
 
