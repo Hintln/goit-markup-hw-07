@@ -565,6 +565,11 @@ border: none;
     display: list-item;
     width: 270px;
     height: 101px;
+    margin-left: 30px;
+}
+
+.benefits__item:nth-child(1){
+    margin-left: 0px;
 }
 
 
@@ -867,8 +872,12 @@ border: none;
 .services__image{
     position: relative;
     display: flex;
+    margin-right: 30px;
 }
 
+.services__image:nth-child(3){
+    margin-right: 0px;
+}
 
 
 
