@@ -80,7 +80,7 @@ address{
     letter-spacing: 0.03em; 
 }
 
-.logo-page{
+.nav__logo-link{
     color: #000;
     font-weight: 700;
     font-size: 26px;
@@ -88,8 +88,8 @@ address{
     letter-spacing: 0.03em;
 }
 
-.logo-page:hover,
-.logo-page:focus{
+.nav__logo-link:hover,
+.nav__logo-link:focus{
     color: var(--accent-color);
 }
 
