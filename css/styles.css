@@ -116,13 +116,13 @@ address{
 }
 
 
-.nav-item + .nav-item{
+.nav__item + .nav__item{
     margin-left: 50px;
     
 }
 
-.nav-item:hover,
-.nav-item:focus{
+.nav__item:hover,
+.nav__item:focus{
     color: var(--accent-color);
     fill: var(--accent-color);
 }
@@ -130,7 +130,7 @@ address{
 
 
 
-.nav-link{
+.nav__link{
     position: relative;
     display: block;
     padding-top: 32px;
@@ -145,7 +145,7 @@ address{
 
 }
 
-.nav-link.current::after{
+.nav__link.nav__current::after{
     content: "";
     display: inline-block;
     width: 100%;
@@ -157,15 +157,15 @@ address{
     border-radius: 2px;
 }
 
-.current{
+.nav__current{
     color: var(--accent-color);
 }
 
 
 
 
-.nav-link:hover,
-.nav-link:focus{
+.nav__link:hover,
+.nav__link:focus{
     color: var(--accent-color);
     padding-top: 32px;
     padding-bottom: 32px;
