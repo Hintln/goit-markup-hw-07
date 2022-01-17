@@ -94,12 +94,12 @@ address{
 }
 
 
-.active-page:hover,
-.active-page:focus{
+.nav__logo:hover,
+.nav__logo:focus{
     color: var(--accent-color);
 }
 
-.active-page{
+.nav__logo{
     color:var(--accent-color);
     font-family: Raleway;
     font-style: normal;
