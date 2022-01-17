@@ -110,7 +110,7 @@ address{
 }
 
 
-.nav-links{
+.nav__list{
     display: flex;
     margin-left: 93px; 
 }
