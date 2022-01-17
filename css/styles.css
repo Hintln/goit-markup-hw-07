@@ -243,21 +243,8 @@ border: none;
 }
 
 
-.nav-link.portfolio::after{
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    background-color: currentColor;
-    border-radius: 2px;
-    
-}
-
-
 /* ===main=== */
+
 .section{
     margin-bottom: 94px;
     text-align: center;
@@ -559,13 +546,6 @@ border: none;
 
 
 
-/*Portfolio section*/
-
-
-
-/*end*/
-
-
 /*Benefits*/
 
 .benefits{
@@ -644,7 +624,72 @@ border: none;
 }
 
 
-/*===Services + Animation Portfolio==*/
+/*=== Portfolio section==*/
+
+
+.filter{
+    margin-bottom: 50px;
+}
+
+.filter__buttons{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.filter__button{
+    color: var(--main-text-color);
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em; 
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 0px;
+    transition: var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+
+.filter__button-accent::after
+{
+    content: " ";
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: currentColor;
+    border-radius: 2px;
+}
+
+.filter__button-accent{
+    color:var(--background-color);
+    background-color: var(--accent-color);
+}
+
+.filter__button:hover,
+.filter__button:focus{
+    color: #ffffff;
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+.filter__list+.filter__list{
+    margin-left: 8px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+
+
+
+
 .services-list.portfolio{
     display: flex;
     flex-wrap: wrap;
@@ -732,12 +777,6 @@ border: none;
 .services-preview:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-/*end*/
-
-
-
-
-
 
 .services-text{
     position: absolute;
@@ -758,8 +797,6 @@ border: none;
 }
 
 
-
-
 .services-preview:nth-child(3n){
     margin-right: 0px;
 }
@@ -773,69 +810,6 @@ border: none;
     align-items: baseline;
     text-align: left;  
 }
-
-
-
-.filter{
-    margin-bottom: 50px;
-}
-
-.filter__buttons{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.filter__button{
-    color: var(--main-text-color);
-    background-color: #F5F4FA;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.03em; 
-    cursor: pointer;
-    border-radius: 4px;
-    padding: 6px 22px;
-    border: 0px;
-    transition: var(--transition-duration)
-    var(--transition-timing-function);
-}
-
-
-.filter__button-accent::after
-{
-    content: " ";
-    display: inline-block;
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    background-color: currentColor;
-    border-radius: 2px;
-}
-
-.filter__button-accent{
-    color:var(--background-color);
-    background-color: var(--accent-color);
-}
-
-.filter__button:hover,
-.filter__button:focus{
-    color: #ffffff;
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-
-.filter__list+.filter__list{
-    margin-left: 8px;
-    background: #F5F4FA;
-    border-radius: 4px;
-}
-
-
 
 
 .link{
@@ -867,6 +841,21 @@ border: none;
 }
 
 
+.services-title
+{
+    color:var(--main-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    width: 322px;
+    height: 36px;
+    margin: 20px 24px 4px 24px;
+}
+
+
+/*end*/
+
 
 .services__title{
     color: var(--main-text-color);
@@ -894,19 +883,7 @@ border: none;
 
 
 
-/*portfolio*/
-.services-title
-{
-    color:var(--main-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    width: 322px;
-    height: 36px;
-    margin: 20px 24px 4px 24px;
-}
-/*end*/
+
 /*====Team===*/
 
 .team>.team__image{
