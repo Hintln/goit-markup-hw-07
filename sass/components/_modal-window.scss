@@ -7,8 +7,8 @@
     z-index: 1;
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity var(--transition-duration) linear,
-    visibility var(--transition-duration) linear;
+    transition: opacity $transition-duration linear,
+    visibility $transition-duration linear;
 }
 
 .backdrop.is-hidden {
@@ -28,13 +28,13 @@
     height: 581px;
     padding: 40px;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--transition-duration) linear;
+    transition: transform $transition-duration linear;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    background-color: var(--background-color);
+    background-color: $background-color;
 }
 
 .modal__open{
@@ -46,17 +46,17 @@
     padding: 0;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--background-color);
+    background-color: $background-color;
     cursor: pointer;
 }
 
 .modal__open:hover .modal__icon,
 .modal__open:focus .modal__icon{
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 .modal__icon{
-    transition: fill var(--transition-duration) var(--transition-timing-function);
+    transition: fill $transition-duration $transition-timing-function;
     margin: 0 9px;
 }
 
@@ -65,7 +65,7 @@
     margin-right: auto;
     margin-top: 30px;
     color: #ffffff;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -81,12 +81,12 @@
 .modal__button:hover,
 .modal__button:focus{
     color: #ffffff;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 }
 
 
 .modal__text{
-    color: var(--main-text-color);
+    color: $main-tex-color;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;

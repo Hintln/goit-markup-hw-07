@@ -484,8 +484,8 @@ body {
   z-index: 1;
   visibility: visible;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-transition: opacity var(--transition-duration) linear, visibility var(--transition-duration) linear;
-  transition: opacity var(--transition-duration) linear, visibility var(--transition-duration) linear;
+  -webkit-transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .backdrop.is-hidden {
@@ -508,14 +508,14 @@ body {
   padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform var(--transition-duration) linear;
-  transition: -webkit-transform var(--transition-duration) linear;
-  transition: transform var(--transition-duration) linear;
-  transition: transform var(--transition-duration) linear, -webkit-transform var(--transition-duration) linear;
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  background-color: var(--background-color);
+  background-color: #fff;
 }
 
 .modal__open {
@@ -527,18 +527,18 @@ body {
   padding: 0;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--background-color);
+  background-color: #fff;
   cursor: pointer;
 }
 
 .modal__open:hover .modal__icon,
 .modal__open:focus .modal__icon {
-  fill: var(--accent-color);
+  fill: #2196F3;
 }
 
 .modal__icon {
-  -webkit-transition: fill var(--transition-duration) var(--transition-timing-function);
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 9px;
 }
 
@@ -547,7 +547,7 @@ body {
   margin-right: auto;
   margin-top: 30px;
   color: #ffffff;
-  background-color: var(--accent-color);
+  background-color: #2196F3;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -564,11 +564,11 @@ body {
 .modal__button:hover,
 .modal__button:focus {
   color: #ffffff;
-  background-color: var(--accent-color);
+  background-color: #2196F3;
 }
 
 .modal__text {
-  color: var(--main-text-color);
+  color: #212121;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
