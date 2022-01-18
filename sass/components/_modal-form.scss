@@ -68,13 +68,12 @@
 
 .form__comment::placeholder{
     color: rgba(117, 117, 117, 0.5);
-}
 
 .form__comment:focus{
     border: 1px solid $accent-color;
     outline: 0;
-}
-
+    }
 .form__comment:not(:placeholder-shown) {
     color: $main-tex-color;
+    }
 }
