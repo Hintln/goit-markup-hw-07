@@ -23,33 +23,18 @@ border: none;
     margin-right: 10px;
 }
 
-
-.header-adress__icon{
-    display: inline-flex;
-    fill: currentColor;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-}
-
-.haeder-adress__link,
 .haeder-adress__link{
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-     transition: var(--transition-duration)
-    var(--transition-timing-function);
- 
+     transition: $transition-duration
+    $transition-timing-function;
+
+    &:hover,
+    &:focus{
+    color: $accent-color;
+    } 
 }
 
-.haeder-adress__link:hover,
-.haeder-adress__link:focus{
-    color: var(--accent-color);
-}
-
-.haeder-adress__link:hover,
-.haeder-adress__link:focus{
-    color: var(--accent-color);
-}

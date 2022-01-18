@@ -457,39 +457,17 @@ body {
   margin-right: 10px;
 }
 
-.header-adress__icon {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  fill: currentColor;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 10px;
-}
-
-.haeder-adress__link,
 .haeder-adress__link {
-  color: var(--secondary-text-color);
+  color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  -webkit-transition: var(--transition-duration) var(--transition-timing-function);
-  transition: var(--transition-duration) var(--transition-timing-function);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.haeder-adress__link:hover,
-.haeder-adress__link:focus {
-  color: var(--accent-color);
-}
-
-.haeder-adress__link:hover,
-.haeder-adress__link:focus {
-  color: var(--accent-color);
+.haeder-adress__link:hover, .haeder-adress__link:focus {
+  color: #2196F3;
 }
 
 .hero {
