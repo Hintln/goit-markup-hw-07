@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center ;
-    color: var(--main-text-color);
+    color: $main-tex-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -27,7 +27,7 @@
 
 
 .checkbox__label  > .checkbox__visual-hidden:checked + .checkbox__icon{
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border: transparent;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .checkbox__link{
-    color: var(--accent-color);
+    color: $accent-color;
     margin-left: 4px;
     text-decoration: underline;
     
@@ -52,8 +52,8 @@
     align-items: center;
     height: 50px;
     width: 200px;
-    background-color: var(--accent-color);
-    color: var(--background-color);
+    background-color: $accent-color;
+    color: $background-color;
     cursor: pointer;
     text-align: center;
     font-family: inherit;

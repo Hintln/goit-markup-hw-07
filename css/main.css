@@ -690,7 +690,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--main-text-color);
+  color: #212121;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -714,7 +714,7 @@ body {
 }
 
 .checkbox__label > .checkbox__visual-hidden:checked + .checkbox__icon {
-  background-color: var(--accent-color);
+  background-color: #2196F3;
   border: transparent;
 }
 
@@ -728,7 +728,7 @@ body {
 }
 
 .checkbox__link {
-  color: var(--accent-color);
+  color: #2196F3;
   margin-left: 4px;
   text-decoration: underline;
 }
@@ -739,8 +739,8 @@ body {
           align-items: center;
   height: 50px;
   width: 200px;
-  background-color: var(--accent-color);
-  color: var(--background-color);
+  background-color: #2196F3;
+  color: #fff;
   cursor: pointer;
   text-align: center;
   font-family: inherit;
