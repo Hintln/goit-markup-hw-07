@@ -724,7 +724,7 @@ body {
   margin-right: 8px;
   margin-bottom: 4px;
   border-radius: 2px;
-  border: 2px solid var(--main-text-color);
+  border: 2px solid #212121;
 }
 
 .checkbox__link {
