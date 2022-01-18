@@ -6,7 +6,7 @@
 
 .logo{
     color: #000;
-    font-family: 'Raleway', sans-serif;
+    font-family: $secondary-font;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -23,17 +23,17 @@
 
 .nav__logo-link:hover,
 .nav__logo-link:focus{
-    color: var(--accent-color);
+    color:$accent-color;
 }
 
 
 .nav__logo:hover,
 .nav__logo:focus{
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .nav__logo{
-    color:var(--accent-color);
+    color:$accent-color;
     font-family: Raleway;
     font-style: normal;
     font-weight: 700;
@@ -56,8 +56,8 @@
 
 .nav__item:hover,
 .nav__item:focus{
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    color: $accent-color;
+    fill: $accent-color;
 }
 
 
@@ -68,13 +68,13 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--main-text-color);
+    color: $main-tex-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em; 
-    transition: var(--transition-duration)
-    var(--transition-timing-function);
+    transition: $transition-duration,
+    $transition-timing-function;
 
 }
 
@@ -91,7 +91,7 @@
 }
 
 .nav__current{
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 
@@ -99,7 +99,7 @@
 
 .nav__link:hover,
 .nav__link:focus{
-    color: var(--accent-color);
+    color: $accent-color;
     padding-top: 32px;
     padding-bottom: 32px;
 }

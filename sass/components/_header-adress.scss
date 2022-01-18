@@ -10,8 +10,8 @@ border: none;
 
 .header-adress-item:hover,
 .header-adress-item:focus{
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    color: $accent-color;
+    fill: $accent-color;
 }
 
 
