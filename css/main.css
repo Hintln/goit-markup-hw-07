@@ -472,6 +472,7 @@ body {
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   max-width: 1600px;
 }
 
