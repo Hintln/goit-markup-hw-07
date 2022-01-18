@@ -1,0 +1,80 @@
+.benefits{
+    height: 251px;
+    align-items: center;
+}
+
+
+.benefits__list{
+    display: flex;
+    margin-bottom: 94px;
+    justify-content: center;  
+}
+
+
+.benefits__item{
+    display: list-item;
+    width: 270px;
+    height: 101px;
+    margin-left: 30px;
+}
+
+.benefits__item:nth-child(1){
+    margin-left: 0px;
+}
+
+
+.benefits__item::before{
+    display: block;
+    content: '';
+    height: 120px;
+    background: #F5F4FA;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.benefits__title{
+    color: var(--main-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.benefits__signature{
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.03em; 
+    text-align:left;
+    width: 270px;
+    text-align: left;
+    margin: 0;
+    line-height: 1.71;
+}
+
+
+.icon-antena::before{
+    background-image: url(../image/antenna.svg);
+}
+
+.icon-clock::before{
+    background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before{
+    background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before{
+    background-image: url(../images/astronaut.svg);
+}
+

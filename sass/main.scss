@@ -1,6 +1,13 @@
 @import "./utils/_variable";
 @import "./base/_reset";
 @import "./base/_common";
+@import "./components/header";
 @import "./components/_nav";
-@import "./components/header-adress";
-@import "./components/hero";
+@import "./components/_header-adress";
+@import "./components/_hero";
+@import "./components/modal-window";
+@import "./components/modal-form";
+@import "./components/modal-checkbox";
+@import "./components/benefts";
+
+
