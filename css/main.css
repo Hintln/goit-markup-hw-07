@@ -674,21 +674,45 @@ body {
 .form__comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-.form__comment:focus {
+.form__comment::-webkit-input-placeholder .form__comment:focus {
   border: 1px solid #2196F3;
   outline: 0;
 }
-
-.form__comment:not(:-moz-placeholder-shown) {
+.form__comment::-moz-placeholder .form__comment:focus {
+  border: 1px solid #2196F3;
+  outline: 0;
+}
+.form__comment:-ms-input-placeholder .form__comment:focus {
+  border: 1px solid #2196F3;
+  outline: 0;
+}
+.form__comment::-ms-input-placeholder .form__comment:focus {
+  border: 1px solid #2196F3;
+  outline: 0;
+}
+.form__comment::placeholder .form__comment:focus {
+  border: 1px solid #2196F3;
+  outline: 0;
+}
+.form__comment::-webkit-input-placeholder .form__comment:not(:placeholder-shown) {
   color: #212121;
 }
-
-.form__comment:not(:-ms-input-placeholder) {
+.form__comment::-moz-placeholder .form__comment:not(:placeholder-shown) {
   color: #212121;
 }
-
-.form__comment:not(:placeholder-shown) {
+.form__comment:-ms-input-placeholder .form__comment:not(:placeholder-shown) {
+  color: #212121;
+}
+.form__comment::-ms-input-placeholder .form__comment:not(:placeholder-shown) {
+  color: #212121;
+}
+.form__comment::placeholder .form__comment:not(:-moz-placeholder-shown) {
+  color: #212121;
+}
+.form__comment::placeholder .form__comment:not(:-ms-input-placeholder) {
+  color: #212121;
+}
+.form__comment::placeholder .form__comment:not(:placeholder-shown) {
   color: #212121;
 }
 
