@@ -831,7 +831,7 @@ body {
 }
 
 .icon-antena::before {
-  background-image: url(../image/antenna.svg);
+  background-image: url(../images/antenna.svg);
 }
 
 .icon-clock::before {
