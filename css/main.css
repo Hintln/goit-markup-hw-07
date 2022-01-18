@@ -1177,7 +1177,7 @@ body {
 }
 
 .project__link {
-  color: var(--main-text-color);
+  color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1202,10 +1202,10 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform var(--transition-duration) var(--transition-timing-function);
-  transition: -webkit-transform var(--transition-duration) var(--transition-timing-function);
-  transition: transform var(--transition-duration) var(--transition-timing-function);
-  transition: transform var(--transition-duration) var(--transition-timing-function), -webkit-transform var(--transition-duration) var(--transition-timing-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project__im {
@@ -1215,7 +1215,7 @@ body {
 }
 
 .project__text {
-  color: var(--background-color);
+  color: #fff;
   margin: 0;
   padding: 63px 24px;
   position: absolute;
@@ -1223,10 +1223,10 @@ body {
   left: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform var(--transition-duration) var(--transition-timing-function);
-  transition: -webkit-transform var(--transition-duration) var(--transition-timing-function);
-  transition: transform var(--transition-duration) var(--transition-timing-function);
-  transition: transform var(--transition-duration) var(--transition-timing-function), -webkit-transform var(--transition-duration) var(--transition-timing-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
@@ -1242,28 +1242,25 @@ body {
           box-sizing: border-box;
   text-align: left;
   margin-bottom: 30px;
-  -webkit-transition: -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
-  transition: -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
-  transition: box-shadow var(--transition-duration) var(--transition-timing-function);
-  transition: box-shadow var(--transition-duration) var(--transition-timing-function), -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project__item:hover, .project__item:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project__item:nth-child(n+7) {
   margin-bottom: 0;
 }
-
-.project__item:hover,
-.project__item:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project__item:nth-child(3n) {
+.project__item:nth-child(n+7):nth-child(3n) {
   margin-right: 0px;
 }
 
 .project__signature {
-  color: var(--secondary-text-color);
+  color: #757575;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
@@ -1275,7 +1272,7 @@ body {
 }
 
 .project__title {
-  color: var(--main-text-color);
+  color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
