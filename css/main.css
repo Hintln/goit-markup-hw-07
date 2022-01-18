@@ -334,15 +334,6 @@ body {
   border-bottom: 1px solid #ECECEC;
 }
 
-.logo {
-  color: #000;
-  font-family: "Ralewey" sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-
 .nav__logo-link {
   color: #000;
   font-weight: 700;
@@ -350,14 +341,7 @@ body {
   line-height: 1.1;
   letter-spacing: 0.03em;
 }
-
-.nav__logo-link:hover,
-.nav__logo-link:focus {
-  color: #2196F3;
-}
-
-.nav__logo:hover,
-.nav__logo:focus {
+.nav__logo-link:hover, .nav__logo-link:focus {
   color: #2196F3;
 }
 
@@ -370,6 +354,9 @@ body {
   line-height: 1.1;
   letter-spacing: 0.03em;
 }
+.nav__logo:hover, .nav__logo:focus {
+  color: #2196F3;
+}
 
 .nav__list {
   display: -webkit-box;
@@ -381,9 +368,7 @@ body {
 .nav__item + .nav__item {
   margin-left: 50px;
 }
-
-.nav__item:hover,
-.nav__item:focus {
+.nav__item + .nav__item:hover, .nav__item + .nav__item:focus {
   color: #2196F3;
   fill: #2196F3;
 }
@@ -401,6 +386,11 @@ body {
   -webkit-transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav__link:hover, .nav__link:focus {
+  color: #2196F3;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .nav__link.nav__current::after {
   content: "";
@@ -416,13 +406,6 @@ body {
 
 .nav__current {
   color: #2196F3;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  color: #2196F3;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .header-adress {

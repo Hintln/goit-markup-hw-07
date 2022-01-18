@@ -4,32 +4,17 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-.logo{
-    color: #000;
-    font-family: $secondary-font;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em; 
-}
-
 .nav__logo-link{
     color: #000;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.1;
     letter-spacing: 0.03em;
-}
-
-.nav__logo-link:hover,
-.nav__logo-link:focus{
+    
+    &:hover,
+    &:focus{
     color:$accent-color;
-}
-
-
-.nav__logo:hover,
-.nav__logo:focus{
-    color: $accent-color;
+    }
 }
 
 .nav__logo{
@@ -40,8 +25,12 @@
     font-size: 26px;
     line-height: 1.1;
     letter-spacing: 0.03em;
-}
 
+    &:hover,
+    &:focus{
+    color: $accent-color;
+    }
+}
 
 .nav__list{
     display: flex;
@@ -52,15 +41,12 @@
 .nav__item + .nav__item{
     margin-left: 50px;
     
-}
-
-.nav__item:hover,
-.nav__item:focus{
+    &:hover,
+    &:focus{
     color: $accent-color;
     fill: $accent-color;
+    }
 }
-
-
 
 
 .nav__link{
@@ -75,6 +61,13 @@
     letter-spacing: 0.02em; 
     transition: $transition-duration,
     $transition-timing-function;
+
+    &:hover,
+    &:focus{
+    color: $accent-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+     }
 
 }
 
@@ -92,14 +85,4 @@
 
 .nav__current{
     color: $accent-color;
-}
-
-
-
-
-.nav__link:hover,
-.nav__link:focus{
-    color: $accent-color;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
