@@ -61,10 +61,10 @@ body {
   border-radius: 4px;
 }
 
-.page-header {
+.header {
   border: 1px solid #ececec;
 }
-.page-header--justify {
+.header--justify {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,40 +243,25 @@ body {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
   text-align: center;
+  padding: 200px 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
   background-color: #2f303a;
-  padding: 200px 0 210px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 94px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./images/background.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/background.jpg);
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-}
-
-.hero > .hero__title {
-  color: #ffffff;
-  background-color: #2F303A;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-align: center;
+  background-position: center;
+  max-width: 1600px;
 }
 
 .hero__title {
-  color: #ffffff;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.3;
+  line-height: 1.37;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .backdrop {
