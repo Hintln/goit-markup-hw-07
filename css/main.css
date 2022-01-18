@@ -294,8 +294,8 @@ body {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-  background-color: var(--background-color);
+  color: #757575;
+  background-color: #fff;
   margin: 0px;
 }
 
