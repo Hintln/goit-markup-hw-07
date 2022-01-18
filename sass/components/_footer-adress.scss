@@ -3,30 +3,21 @@
 }
 
 .adress__link{
-    color: #ffffff; 
+    color: $background-color; 
     background-color: #2F303A;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em; 
 
-    transition: var(--transition-duration)
-    var(--transition-timing-function);
+    transition: $transition-duration
+    $transition-timing-function;
 
-}
 
-.adress__link:hover,
-.adress__link:focus{
-    color: var(--accent-color);
-}
-
-.footer-adress__link:hover,
-.footer-adress__link:focus{
-    color: var(--accent-color);
-}
-
-.footer-adress__link:nth-last-child(1n+2){
-    margin-bottom: 9px;
+    &:hover,
+    &:focus{
+    color: $accent-color;
+    }
 }
 
 .footer-adress__link{
@@ -36,5 +27,13 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+
+    &:hover,
+    &:focus{
+    color: $accent-color;
+    }
 }
    
+.footer-adress__link:nth-last-child(1n+2){
+    margin-bottom: 9px;
+}

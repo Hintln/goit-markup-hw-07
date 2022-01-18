@@ -20,15 +20,16 @@
     margin-top: 60px;
     margin-bottom: 20px;
     margin-right: 70px;
+
+    &:hover,
+    &:focus{
+    color: $accent-color;
+    }
 }
 
-.footer__logo:hover,
-.footer__logo:focus{
-    color: var(--accent-color);
-}
 
 .footer__active-page{
-    color: var(--accent-color);
+    color: $accent-color;
     font-family: Raleway;
     font-style: normal;
     font-weight: 700;
