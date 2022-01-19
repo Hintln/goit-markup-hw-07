@@ -20,6 +20,10 @@
     }
 }
 
+.footer__link{
+    margin-bottom: 9px;
+}
+
 .footer-adress__link{
     color: rgba(255, 255, 255, 0.6);
     background-color: #2F303A;
@@ -27,6 +31,10 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    &--adress{
+        color: $background-color;
+
+    }
 
     &:hover,
     &:focus{
@@ -37,3 +45,4 @@
 .footer-adress__link:nth-last-child(1n+2){
     margin-bottom: 9px;
 }
+

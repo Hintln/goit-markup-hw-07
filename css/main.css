@@ -1359,6 +1359,10 @@ body {
   color: #2196F3;
 }
 
+.footer__link {
+  margin-bottom: 9px;
+}
+
 .footer-adress__link {
   color: rgba(255, 255, 255, 0.6);
   background-color: #2F303A;
@@ -1366,6 +1370,9 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+.footer-adress__link--adress {
+  color: #fff;
 }
 .footer-adress__link:hover, .footer-adress__link:focus {
   color: #2196F3;
