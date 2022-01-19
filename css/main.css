@@ -331,7 +331,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #ECECEC;
 }
 
 .nav__logo-link {
@@ -394,7 +393,6 @@ body {
 
 .nav__link.nav__current::after {
   content: "";
-  display: inline-block;
   width: 100%;
   height: 4px;
   position: absolute;
@@ -415,8 +413,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 94px;
+}
+
+.header__border {
   border-bottom: 1px solid #ECECEC;
+}
+
+.header {
+  margin-bottom: 94px;
 }
 
 .header-adress {
