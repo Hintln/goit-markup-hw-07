@@ -818,9 +818,6 @@ body {
   height: 101px;
   margin-left: 30px;
   background: #F5F4FA;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
   margin-top: 94px;
 }
 .benefits__item:nth-child(1) {
