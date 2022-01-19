@@ -1084,6 +1084,11 @@ body {
   margin-right: 0;
 }
 
+.clients__item:hover .clients__icon,
+.clients__item:focus .clients__icon {
+  fill: #2196F3;
+}
+
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1100,9 +1105,8 @@ body {
 
 .clients__icon {
   fill: #afb1b8;
-}
-.clients__icon:hover, .clients__icon:focus {
-  fill: #2196F3;
+  -webkit-transition: fill cubic-bezier(0.4, 0, 0.2, 1) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill cubic-bezier(0.4, 0, 0.2, 1) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter {
